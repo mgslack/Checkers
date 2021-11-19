@@ -14,7 +14,7 @@ using GameStatistics;
  * 
  * Author: Michael G. Slack
  * Date Written: 2014-03-28
- * Version: 1.0.2.0
+ * Version: 1.0.3.0
  * 
  * ----------------------------------------------------------------------------
  * 
@@ -22,6 +22,8 @@ using GameStatistics;
  *          2015-12-25 - Added a check for pause when opening options dialog.
  *                       Fixed where 'pause' button wasn't showing up properly
  *                       once both players were toggled to 'computer' (autoplay).
+ *          2021-11-19 - Moved CheckerImages class and images to stand-alone
+ *                       assembly so can be used by other games/applications.
  * 
  */
 namespace Checkers

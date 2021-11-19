@@ -14,15 +14,18 @@ using System.Windows.Forms;
  *
  * ----------------------------------------------------------------------------
  * 
- * Revised: yyyy-mm-dd - XXXX.                     
+ * Revised: 2021-11-19 - Moved to be in a stand-alone assembly so can be used by
+ *                       other applications.  Set to v2.0.0.0
  *
  */
 namespace Checkers
 {
+    #region Enums
     /* Enum of the different checker color images available. */
     public enum CheckerColors { Black, Blue, DarkWood, Green, LightWood, Red, White, Yellow };
     /* Enum of the different checker 'crown' images available. */
     public enum CheckerCrowns { crown1, crown2, crown3 };
+    #endregion
 
     public class CheckerImages
     {
@@ -78,6 +81,13 @@ namespace Checkers
             return name;
         }
 
+        private static Stream GetResourceStream(string path)
+        {
+            Assembly asm = Assembly.GetExecutingAssembly();
+
+            return asm.GetManifestResourceStream(path);
+        }
+
         private Bitmap LoadImage(string imageName)
         {
             string path = CHECKER_IMAGE_NAMESPACE + imageName;
@@ -100,19 +110,7 @@ namespace Checkers
 
         // --------------------------------------------------------------------
 
-        /*
-         * Method used to get a manifest resource stream of the selected
-         * resource represented by the resource path.
-         */
-        public static Stream GetResourceStream(string path)
-        {
-            Assembly asm = Assembly.GetExecutingAssembly();
-
-            return asm.GetManifestResourceStream(path);
-        }
-
-        // --------------------------------------------------------------------
-
+        #region Public Methods
         /*
          * Method returns a checker image in the specified color.
          */
@@ -188,5 +186,6 @@ namespace Checkers
 
             return crowned;
         }
+        #endregion
     }
 }

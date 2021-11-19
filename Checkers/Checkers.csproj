@@ -37,6 +37,9 @@
     <ApplicationIcon>Checkers.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CheckersImages">
+      <HintPath>..\CheckersImages\bin\Release\CheckersImages.dll</HintPath>
+    </Reference>
     <Reference Include="GameStatistics">
       <HintPath>..\..\GameStatistics\bin\Release\GameStatistics.dll</HintPath>
     </Reference>
@@ -64,7 +67,6 @@
     <Compile Include="CheckerBoard.Designer.cs">
       <DependentUpon>CheckerBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="CheckerImages.cs" />
     <Compile Include="CursorUtil.cs" />
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
@@ -128,20 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Checkers.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="images\disabled.bmp" />
-    <EmbeddedResource Include="images\black_checker.bmp" />
-    <EmbeddedResource Include="images\blue_checker.bmp" />
-    <EmbeddedResource Include="images\darkwood_checker.bmp" />
-    <EmbeddedResource Include="images\green_checker.bmp" />
-    <EmbeddedResource Include="images\lightwood_checker.bmp" />
-    <EmbeddedResource Include="images\red_checker.bmp" />
-    <EmbeddedResource Include="images\white_checker.bmp" />
-    <EmbeddedResource Include="images\yellow_checker.bmp" />
-    <EmbeddedResource Include="images\crown1.gif" />
-    <EmbeddedResource Include="images\crown2.gif" />
-    <EmbeddedResource Include="images\crown3.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

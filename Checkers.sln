@@ -1,11 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomCheckers", "CheckersTest\RandomCheckers.csproj", "{9CDFB18F-5796-4926-B673-6E688ADB68A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckersRulesEngine", "CheckersRulesEngine\CheckersRulesEngine.csproj", "{0EB864A6-7D9F-46C9-B19B-200D40A0360D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkers", "Checkers\Checkers.csproj", "{6AC1F590-E9F7-4D58-B861-770E20C88FF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckersImages", "CheckersImages\CheckersImages.csproj", "{CE313273-7E6D-4D60-BC4B-5928634F917E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,8 +51,23 @@ Global
 		{6AC1F590-E9F7-4D58-B861-770E20C88FF9}.Release|Mixed Platforms.Build.0 = Release|x86
 		{6AC1F590-E9F7-4D58-B861-770E20C88FF9}.Release|x86.ActiveCfg = Release|x86
 		{6AC1F590-E9F7-4D58-B861-770E20C88FF9}.Release|x86.Build.0 = Release|x86
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Debug|x86.Build.0 = Debug|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE313273-7E6D-4D60-BC4B-5928634F917E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2200FF43-4994-4513-994F-FF1DEEE8AFAC}
 	EndGlobalSection
 EndGlobal
